@@ -1,0 +1,66 @@
+.addProduct {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .top {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        .form {
+            flex: 1;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+        }
+        .none {
+            display: none;
+        }
+
+        .authen {
+            z-index: 10;
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 100px;
+            width: 100vw;
+            height: 100%;
+
+            .authenitem {
+                padding: 20px;
+                margin: 0 20px;
+                border: 1px solid black;
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .displayProduct {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        // overflow-x: scroll;
+        margin-top: 50px;
+        .imgcontain {
+            flex: 1;
+            height: 200px;
+            width: 200px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .info {
+            width: 200px;
+        }
+
+        // .right {
+        //     flex: 1;
+        // }
+    }
+}
